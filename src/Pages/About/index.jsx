@@ -11,9 +11,9 @@ class About extends Component {
         <div className={styles.container}>
           <MyTitle name="LOREMIPSUM" fontSize="62px" color="#f0f0d6" />
           <Paragraph>
-            +62 896 3770 8915 | <span>gandhiiii9@gmail.com</span>
+            +62 896 3770 8915 | <span>gandhi_wijaya_@gmail.com</span>
           </Paragraph>
-          <MyGap height="0.5vh" />
+          <MyGap height="5vh" />
           <Paragraph>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
             quidem unde magnam quia alias tempora similique facere, eum sunt

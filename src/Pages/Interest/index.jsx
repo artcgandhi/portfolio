@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MyGap from "../../Components/Atoms/MyGap";
 import MyTitle from "../../Components/Atoms/MyTitle";
 import { Paragraph } from "../../Components/Styles/globalStyles";
 
@@ -6,12 +7,14 @@ class Interest extends Component {
   render() {
     return (
       <div>
-        <MyTitle name={"Interest"} fontSize="36px" fontWeight="600" />
+        <MyTitle name="INTEREST" fontSize="36px" fontWeight="500" />
+        <MyGap height="5vh" />
         <Paragraph primary maxWidth="80vw">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos sunt
           consectetur dolores eaque ex, deleniti, dolor placeat asperiores
           quibusdam pariatur quis eius cumque ipsam suscipit.
         </Paragraph>
+        <MyGap height="3vh" />
         <Paragraph primary maxWidth="80vw">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, eaque
           quo doloribus explicabo nulla aliquid voluptas nam quam quas dicta

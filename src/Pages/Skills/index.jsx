@@ -21,11 +21,17 @@ class Skills extends Component {
   };
   render() {
     return (
-      <section>
+      <section className={styles.container}>
         <div>
-          <MyTitle name="SKILLS" fontSize="36px" fontWeight="600" />
+          <MyTitle
+            name="SKILLS"
+            fontSize="36px"
+            fontWeight="500"
+            color="white"
+          />
           <MyGap height="5vh" />
           <MyDisbaledTitle text="PROGRAMMING LANGUAGES & TOOLS" />
+          <MyGap height="3vh" />
           <ul className={`${styles.ulWrapper} fa-ul`}>
             {this.state.myList.map((element, index) => (
               <li key={index.toString()}>

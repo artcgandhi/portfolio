@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Experience from "./Pages/Experience";
 import Skills from "./Pages/Skills";
 import Interest from "./Pages/Interest";
+import Awards from "./Pages/Awards";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Experience />
         <Skills />
         <Interest />
+        <Awards />
       </div>
     );
   }

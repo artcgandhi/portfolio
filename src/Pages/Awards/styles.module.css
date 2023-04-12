@@ -4,14 +4,10 @@
 
 .ulWrapper {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 15vh;
   color: white;
 }
 
-.iconlist {
+.iconList {
   color: grey;
   margin-right: 8px;
 }
