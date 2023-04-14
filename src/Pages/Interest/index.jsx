@@ -6,7 +6,7 @@ import { Paragraph } from "../../Components/Styles/globalStyles";
 class Interest extends Component {
   render() {
     return (
-      <div>
+      <section id={this.props.id} style={{ height: "100vh" }}>
         <MyTitle name="INTEREST" fontSize="36px" fontWeight="500" />
         <MyGap height="5vh" />
         <Paragraph primary maxWidth="80vw">
@@ -21,7 +21,7 @@ class Interest extends Component {
           nesciunt atque sint cupiditate facilis ab reprehenderit voluptatum,
           officia sapiente ex? Dignissimos officia provident laudantium.
         </Paragraph>
-      </div>
+      </section>
     );
   }
 }

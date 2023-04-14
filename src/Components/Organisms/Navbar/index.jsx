@@ -1,29 +1,30 @@
 import React, { Component } from "react";
-import LinkTo from "../../Atoms/Link";
+import { Link } from "react-router-dom";
+import MyLink from "../../Atoms/MyLink";
 import styles from "./styles.module.css";
 
 class Navbar extends Component {
   render() {
     return (
       <nav className={styles.navbar}>
-        <ul>
+        <ul className={styles.ulNav}>
           <li className={styles.list}>
-            <LinkTo name="Home" />
+            <MyLink to="/#home" name="Home" />
           </li>
           <li className={styles.list}>
-            <LinkTo name="About" />
+            <MyLink to="/#about" name="About" />
           </li>
           <li className={styles.list}>
-            <LinkTo name="Experience" />
+            <MyLink to="/#experience" name="Experience" />
           </li>
           <li className={styles.list}>
-            <LinkTo name="Skills" />
+            <MyLink to="/#skills" name="Skills" />
           </li>
           <li className={styles.list}>
-            <LinkTo name="Interest" />
+            <MyLink to="/#interest" name="Interest" />
           </li>
           <li className={styles.list}>
-            <LinkTo name="Awards" />
+            <MyLink to="/#awards" name="Awards" />
           </li>
         </ul>
       </nav>

@@ -5,10 +5,10 @@ import styles from "./styles.module.css";
 class Home extends Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id={this.props.id}>
         <img />
-        <MyTitle name="Saka" fontSize="63px" color="#353532" />
-        <p>Architecture | Design Graphic | Photography</p>
+        <MyTitle name="Gandhi Wijaya" fontSize="63px" color="#353532" />
+        <p>Photography | Design Graphic | Front End</p>
       </div>
     );
   }

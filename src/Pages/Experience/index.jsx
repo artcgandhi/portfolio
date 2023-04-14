@@ -8,7 +8,7 @@ import { Paragraph } from "../../Components/Styles/globalStyles.js";
 class Experience extends Component {
   render() {
     return (
-      <section>
+      <section id={this.props.id} style={{ minHeight: "100vh" }}>
         <div>
           <MyTitle name="EXPERIENCE" fontSize="36px" fontWeight="500" />
           <MyGap height="5vh" />

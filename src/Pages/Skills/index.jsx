@@ -21,7 +21,7 @@ class Skills extends Component {
   };
   render() {
     return (
-      <section className={styles.container}>
+      <section className={styles.container} id={this.props.id}>
         <div>
           <MyTitle
             name="SKILLS"

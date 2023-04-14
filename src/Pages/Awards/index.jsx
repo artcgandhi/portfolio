@@ -15,7 +15,7 @@ class Awards extends Component {
   };
   render() {
     return (
-      <section className={styles.container}>
+      <section className={styles.container} id={this.props.id}>
         <MyTitle
           name="AWARDS & CERTIFIACTION"
           fontSize="36px"

@@ -1,6 +1,5 @@
 .container {
-  height: 50vh;
   color: #353532;
-  overflow: hidden;
   text-align: center;
+  height: 100vh;
 }
