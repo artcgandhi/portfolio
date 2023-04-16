@@ -2,16 +2,23 @@ import React, { Component } from "react";
 import MyGap from "../../Components/Atoms/MyGap";
 import MyTitle from "../../Components/Atoms/MyTitle";
 import { MySection, Paragraph } from "../../Components/GlobalStyles";
-import styles from "./styles.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import MyDisbaledTitle from "../../Components/Atoms/MyDisabledTitle";
+
+const iconWrapper = {
+  width: "6vw",
+  display: "flex",
+  justifyContent: "space-between",
+  color: "white",
+};
 
 class About extends Component {
   render() {
     return (
       <MySection bgPrimary paddingLeft id={this.props.id}>
         <MyTitle name="LOREMIPSUM" fontSize="62px" color="#f0f0d6" />
-        <Paragraph>
-          +62 812 5432 0987 | <span>qwerty_@gmail.com</span>
-        </Paragraph>
+        <MyDisbaledTitle text="+62 812 0987 6543 | gandhi_wijaya@gmail.com" />
         <MyGap height="5vh" />
         <Paragraph>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem
@@ -23,6 +30,11 @@ class About extends Component {
           praesentium, aliquid minus! Error nostrum vel asperiores, aliquam
           laborum suscipit delectus sint quae voluptatem commodi id!
         </Paragraph>
+        <MyGap height="10vh" />
+        <div style={iconWrapper}>
+          <FontAwesomeIcon icon={faGithub} size="2xl" />
+          <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+        </div>
       </MySection>
     );
   }
