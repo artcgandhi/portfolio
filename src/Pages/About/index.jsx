@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import MyGap from "../../Components/Atoms/MyGap";
 import MyTitle from "../../Components/Atoms/MyTitle";
-import { Paragraph } from "../../Components/Styles/globalStyles";
+import { MySection, Paragraph } from "../../Components/GlobalStyles";
 import styles from "./styles.module.css";
 
 class About extends Component {
   render() {
     return (
-      <section id={this.props.id} className={styles.container}>
+      <MySection bgPrimary paddingLeft id={this.props.id}>
         <MyTitle name="LOREMIPSUM" fontSize="62px" color="#f0f0d6" />
         <Paragraph>
           +62 812 5432 0987 | <span>qwerty_@gmail.com</span>
@@ -23,7 +23,7 @@ class About extends Component {
           praesentium, aliquid minus! Error nostrum vel asperiores, aliquam
           laborum suscipit delectus sint quae voluptatem commodi id!
         </Paragraph>
-      </section>
+      </MySection>
     );
   }
 }

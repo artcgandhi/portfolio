@@ -5,6 +5,7 @@ import MyTitle from "../../Components/Atoms/MyTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles.module.css";
+import { MySection } from "../../Components/GlobalStyles";
 
 class Skills extends Component {
   state = {
@@ -21,7 +22,7 @@ class Skills extends Component {
   };
   render() {
     return (
-      <section className={styles.container} id={this.props.id}>
+      <MySection bgPrimary id={this.props.id}>
         <div>
           <MyTitle
             name="SKILLS"
@@ -44,7 +45,7 @@ class Skills extends Component {
             ))}
           </ul>
         </div>
-      </section>
+      </MySection>
     );
   }
 }

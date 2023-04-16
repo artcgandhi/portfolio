@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import MyLink from "../../Atoms/MyLink";
 import styles from "./styles.module.css";
 
@@ -9,7 +8,7 @@ class Navbar extends Component {
       <nav className={styles.navbar}>
         <ul className={styles.ulNav}>
           <li className={styles.list}>
-            <MyLink to="/#home" name="Home" />
+            <MyLink to="/#gandhi" name="Gandhi" />
           </li>
           <li className={styles.list}>
             <MyLink to="/#about" name="About" />

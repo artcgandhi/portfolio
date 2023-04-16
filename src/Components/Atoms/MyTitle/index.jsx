@@ -1,7 +1,7 @@
 import React from "react";
 
 const MyTitle = (props) => {
-  const { fontSize, fontWeight, color } = props;
+  const { fontSize, fontWeight, color, backgroundColor } = props;
   const myStyle = {
     fontSize: fontSize || "16px",
     fontWeight: fontWeight || "normal",

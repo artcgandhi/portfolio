@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import "./App.css";
 import Navbar from "./Components/Organisms/Navbar";
 import ScrollHandler from "./Features/ScrollHandler";
-import MyScreen from "./MyScreen";
+import Pages from "./Pages";
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <ScrollHandler />
         <Navbar />
-        <MyScreen />
+        <Pages />
       </div>
     );
   }

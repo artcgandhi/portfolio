@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import MyGap from "../../Components/Atoms/MyGap";
 import MyTitle from "../../Components/Atoms/MyTitle";
-import { Paragraph } from "../../Components/Styles/globalStyles";
+import { MySection, Paragraph } from "../../Components/GlobalStyles";
 
 class Interest extends Component {
   render() {
     return (
-      <section id={this.props.id} style={{ height: "100vh" }}>
+      <MySection id={this.props.id}>
         <MyTitle name="INTEREST" fontSize="36px" fontWeight="500" />
         <MyGap height="5vh" />
         <Paragraph primary maxWidth="80vw">
@@ -21,7 +21,7 @@ class Interest extends Component {
           nesciunt atque sint cupiditate facilis ab reprehenderit voluptatum,
           officia sapiente ex? Dignissimos officia provident laudantium.
         </Paragraph>
-      </section>
+      </MySection>
     );
   }
 }

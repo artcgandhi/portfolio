@@ -3,12 +3,12 @@ import MyGap from "../../Components/Atoms/MyGap";
 import MyTitle from "../../Components/Atoms/MyTitle";
 import MyEvent from "../../Components/Molecules/MyEvent";
 import styles from "./styles.module.css";
-import { Paragraph } from "../../Components/Styles/globalStyles.js";
+import { MySection, Paragraph } from "../../Components/GlobalStyles/index.js";
 
 class Experience extends Component {
   render() {
     return (
-      <section id={this.props.id} style={{ minHeight: "100vh" }}>
+      <MySection id={this.props.id}>
         <div>
           <MyTitle name="EXPERIENCE" fontSize="36px" fontWeight="500" />
           <MyGap height="5vh" />
@@ -54,7 +54,7 @@ class Experience extends Component {
             </li>
           </ul>
         </div>
-      </section>
+      </MySection>
     );
   }
 }

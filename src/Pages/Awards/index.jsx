@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import MyGap from "../../Components/Atoms/MyGap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward } from "@fortawesome/free-solid-svg-icons";
+import { MySection } from "../../Components/GlobalStyles";
 
 class Awards extends Component {
   state = {
@@ -15,7 +16,7 @@ class Awards extends Component {
   };
   render() {
     return (
-      <section className={styles.container} id={this.props.id}>
+      <MySection bgPrimary id={this.props.id}>
         <MyTitle
           name="AWARDS & CERTIFIACTION"
           fontSize="36px"
@@ -31,7 +32,7 @@ class Awards extends Component {
             </li>
           ))}
         </ul>
-      </section>
+      </MySection>
     );
   }
 }
