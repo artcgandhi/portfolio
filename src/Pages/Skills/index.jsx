@@ -23,28 +23,21 @@ class Skills extends Component {
   render() {
     return (
       <MySection bgPrimary id={this.props.id}>
-        <div>
-          <MyTitle
-            name="SKILLS"
-            fontSize="36px"
-            fontWeight="500"
-            color="white"
-          />
-          <MyGap height="5vh" />
-          <MyDisbaledTitle text="PROGRAMMING LANGUAGES & TOOLS" />
-          <MyGap height="3vh" />
-          <ul className={`${styles.ulWrapper} fa-ul`}>
-            {this.state.myList.map((element, index) => (
-              <li key={index.toString()}>
-                <FontAwesomeIcon
-                  icon={faCheckSquare}
-                  className={styles.iconlist}
-                />
-                {element}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <MyTitle name="SKILLS" fontSize="36px" fontWeight="500" color="white" />
+        <MyGap height="5vh" />
+        <MyDisbaledTitle text="PROGRAMMING LANGUAGES & TOOLS" />
+        <MyGap height="3vh" />
+        <ul className={`${styles.ulWrapper} fa-ul`}>
+          {this.state.myList.map((element, index) => (
+            <li key={index.toString()}>
+              <FontAwesomeIcon
+                icon={faCheckSquare}
+                className={styles.iconlist}
+              />
+              {element}
+            </li>
+          ))}
+        </ul>
       </MySection>
     );
   }
